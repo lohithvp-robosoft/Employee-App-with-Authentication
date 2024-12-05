@@ -25,8 +25,4 @@ public class ResponseUtil {
     public static ResponseEntity<EmployeeResponseDTO> errorResponseDefault(String errorMessage) {
         return new ResponseEntity<>(new EmployeeResponseDTO(-1, 404, errorMessage, null), HttpStatus.NOT_FOUND);
     }
-
-//    public static ResponseEntity<EmployeeResponseDTO> deletedResponse(EmployeeResponse employeeResponse, String message) {
-//        return new ResponseEntity<>(new EmployeeResponseDTO(0, 200, message, employeeResponse), HttpStatus.OK);
-//    }
 }
