@@ -62,7 +62,6 @@ public class Config {
                         .builder()
                         .username(user.getEmail())
                         .password(user.getPassword())
-                        .roles("USER") // Assign a default role
                         .build())
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
     }
